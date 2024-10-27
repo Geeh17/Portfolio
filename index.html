@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geraldo Luiz - Portfólio</title>
+    <meta name="description" content="Analista de Sistemas, Desenvolvedor Front end, UI Design, React Js">
+    <meta name="keywords" content="Analista de Sistemas, Desenvolvedor Front end, UI Design, React Js">
+    <meta name="author" content="Geraldo Luiz">
+    <meta name="copyright" content="© 2024 Geraldo Luiz" />
+    <meta property="og:title" content="Portfólio | Geraldo Luiz - Desenvolvedor Front end e UI Designer" />
+    <meta property="og:description" content="Analista de Sistemas, Desenvolvedor Front end, UI Design, React Js." />
+    <meta property="og:image" content="image/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+</head>
+
+<body class="show">
+    <header>
+    <a href="#home" class="logo" aria-label="Geraldo Luiz Portfolio">Geraldo Luiz</a>
+    <div class="toggle" onclick="toggleMenu()" aria-label="Menu Toggle"></div>
+    <nav>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#sobre-mim" onclick="toggleMenu()">Sobre mim</a></li>
+            <li><a href="#tecnologias" onclick="toggleMenu()">Tecnologias</a></li>
+            <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+            <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="banner" id="home">
+    <div class="textBx" style="animation: slide-bottom 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;">
+        <h2><span>Geraldo Luiz</span></h2>
+        <h3 id="result" role="alert"></h3>
+        <h3 id="log"></h3>
+        <a href="#sobre-mim" class="btn">Sobre mim</a>
+    </div>
+</section>
+
+<section class="sobre-mim" id="sobre-mim">
+    <div class="heading">
+        <h2 data-anime="top">Sobre mim</h2>
+    </div>
+    <div class="content">
+        <div class="contentBx w50">
+            <p data-anime="top">Atualmente, atuo como Analista de Sistemas, com especialização em C#, e estou cursando Análise e Desenvolvimento de Sistemas para ampliar minhas habilidades técnicas e explorar novos horizontes no campo da tecnologia. Sou apaixonado por inovação e pela transformação de ideias em soluções práticas e eficientes, sempre buscando utilizar as melhores e mais recentes tecnologias no desenvolvimento de software.</p>
+            <p data-anime="top">Como entusiasta da inovação, acredito que o talento e a genialidade são importantes, mas são a persistência e a determinação que verdadeiramente fazem a diferença.</p>
+            <p data-anime="top"><strong>Principais Competências:</strong></p>
+            <ul data-anime="top" class="competencias">
+            <li>API Development</li>
+            <li>C# e .NET Development</li>
+            <li>Azure Cloud Services</li>
+            <p data-anime="top"><strong>Design Patterns:</strong></p>
+            <li>Criacionais GoF com .NET e C#</li>
+            <li>Estruturais GoF com .NET e C#</li>
+            <p data-anime="top"><strong>Banco de Dados:</strong></p>
+            <li>Oracle PL/SQL</li>
+            <li>SQL Server 2019</li>        
+            <p data-anime="top"><strong>Certificações:</strong></p>
+            <li>Randstad - Backend com .NET</li>
+            <li>Clean Architecture Essencial - ASP.NET Core com C#</li>
+            <li>Banco de Dados: Oracle PL/SQL - IFRS</li>
+            <li>Administrador de Banco de Dados - IFRS</li>
+
+            <p data-anime="top">Vamos codar!</p>
+
+            <a data-anime="top" href="https://drive.google.com/file/d/1T36ozFtQPl40TyYHbrI91I9cY6QRI2IB/view?usp=sharing" target="_blank" class="btn curriculo" style="text-align: center;">
+                Confira o meu currículo <i class="fas fa-file-pdf fa-lg" style="padding-left: 8px;"></i>
+            </a>
+        </div>
+        <div class="w50">
+            <img data-anime="left" src="image/prp.jpeg" width="200" class="img img-th" alt="Geraldo Luiz">
+        </div>
+    </div>
+</section>
+<!-- Tecnologias -->
+<section class="tecnologias" id="tecnologias">
+    <div class="heading white">
+        <h2 data-anime="top">Tecnologias</h2>
+        <p data-anime="top" style="letter-spacing: 0.3em; font-size: 25px;">Confira as tecnologias que mais utilizo!</p>
+        <div data-anime="top">
+            <hr style="width: 100%; border: 0; height: 1px; background: #000; opacity: 0.1;">
+        </div>
+    </div>
+    <div class="content">
+        <div data-anime="top1" class="tecnologiasBx">
+            <span class="iconify" data-icon="vscode-icons:file-type-csharp" style="font-size:50px; color:#178600;"></span>
+            <h2>C#</h2>
+            <p>Linguagem de programação de alto nível que suporta múltiplos paradigmas.</p>
+        </div>
+        <div data-anime="top2" class="tecnologiasBx">
+            <i class="fas fa-database fa-lg" style="font-size:50px; color:black;"></i>
+            <h2>SQL</h2>
+            <p>Linguagem de consulta padrão para bancos de dados relacionais.</p>
+        </div>
+        <div data-anime="top3" class="tecnologiasBx">
+            <i class="fab fa-react fa-lg" style="font-size:50px; color:#5ed3f3;"></i>
+            <h2>React</h2>
+            <p>Biblioteca para construção de interfaces de usuário (UI).</p>
+        </div>
+        <div data-anime="top4" class="tecnologiasBx">
+            <span class="iconify" data-icon="vscode-icons:file-type-tailwind" style="font-size:50px;"></span>
+            <h2>Tailwind CSS</h2>
+            <p>Framework CSS com uma abordagem "utility-first", que não fornece classes predefinidas.</p>
+        </div>
+    </div>
+
+    <div class="heading white">
+        <p data-anime="top" style="font-size: 25px; padding-top: 100px;">Outras tecnologias que estou aperfeiçoando!</p>
+        <div data-anime="top">
+            <hr style="width: 100%; border: 1px dotted #000; opacity: 0.2;">
+        </div>
+    </div>
+    <div class="content">
+        <div data-anime="top1" class="tecnologiasBx">
+            <i class="fab fa-react fa-lg" style="font-size:50px; color:#5ed3f3;"></i>
+            <h2>React Native</h2>
+            <p>Framework para desenvolvimento de aplicativos móveis para Android e iOS.</p>
+        </div>
+        <div data-anime="top2" class="tecnologiasBx">
+            <span class="iconify" data-icon="logos:nextjs" style="font-size:20px;"></span>
+            <h2>Next.js</h2>
+            <p>Framework de desenvolvimento web de código aberto criado pela Vercel, que facilita a construção de aplicativos React.</p>
+        </div>
+        <div data-anime="top3" class="tecnologiasBx">
+            <span class="iconify" data-icon="logos:typescript-icon" style="font-size:50px;"></span>
+            <h2>TypeScript</h2>
+            <p>Superconjunto de JavaScript que adiciona tipagem estática opcional à linguagem.</p>
+        </div>
+        <div data-anime="top4" class="tecnologiasBx">
+            <span class="iconify" data-icon="logos:mongodb" style="font-size:25px; color:#47A248;"></span>
+            <h2>MongoDB</h2>
+            <p>Banco de dados orientado a documentos, cross-platform e disponível em código aberto.</p>
+        </div>
+    </div>
+</section>
+<!-- Projetos -->
+<section class="projetos" id="projetos">
+    <div class="heading">
+        <h2 data-anime="top">Projetos</h2>
+        <p data-anime="top" style="letter-spacing: 0.3em; font-size: 25px;">Confira os meus Projetos!</p>
+        <div data-anime="top">
+            <hr style="width: 100%; border: 0; height: 1px; background: #000; opacity: 0.1;">
+        </div>
+    </div>
+    <div class="content">
+        <div data-anime="top1" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/cep.png" alt="Consulta de CEP">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Consulta CEP<br><span class="text-span">JavaScript | CSS</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(1)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/ConsultaCep" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top2" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/tempo.png" alt="Previsão do Tempo">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Previsão do Tempo<br><span class="text-span">JavaScript | HTML</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(2)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/Previsao-do-Tempo" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top3" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/cardapio.png" alt="Cardápio">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Lanchonete<br><span class="text-span">JavaScript | Tailwind</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(3)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/Cardapio" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top4" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/carro.png" alt="Consulta de Carros">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Consulta de Carros<br><span class="text-span">C# | Blazor</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(4)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/ConsultaCarros" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top5" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/Financas.png" alt="Banco Finanças">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Banco Finanças<br><span class="text-span">HTML | CSS</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(5)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/BancoDigital" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top6" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/templates.png" alt="Templates">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Templates<br><span class="text-span">JavaScript | HTML</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(6)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/Ideias-para-Sites" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top7" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/registro_os.png" alt="Registro de Ordem de Serviço">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Registro Ordem de Serviço<br><span class="text-span">TypeScript | Tailwind</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(7)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/Controle-OS" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top8" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/projetorBarber.png" alt="BarberShop">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">BarberShop<br><span class="text-span">JavaScript | HTML</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(8)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/Barbearia" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top9" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/Anotacao.png" alt="Anotações">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Anotações<br><span class="text-span">React | HTML</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(9)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/SistemadeAnota-es" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top10" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/Registro.png" alt="Registros e Despesas">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Registros e Despesas<br><span class="text-span">JavaScript | HTML</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(10)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/Despesas-JS" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top11" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/LojaMoveis.png" alt="Loja de Móveis">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Loja de Móveis<br><span class="text-span">C# | HTML</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(11)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/Loja_Moveis" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-anime="top12" class="projetosBx">
+            <img class="hover-shadow cursor" src="image/gerador.png" alt="Gerador de Senha">
+            <div>
+                <div class="overlay">
+                    <h3 class="text">Gerador de Senha<br><span class="text-span" id="em-breve">JavaScript | CSS</span></h3>
+                    <ul class="sci">
+                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(12)" class="fas fa-plus-circle"></i></a></li>
+                        <li style="--i:2;"><a href="https://github.com/Geeh17/Gerador-de-senha" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="heading repositorio">
+        <a data-anime="top" href="https://github.com/Geeh17?tab=repositories" target="_blank">Repositórios no GitHub</a>
+    </div>
+</section>
+
+<!-- Modal de Imagens -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides">
+            <div class="numbertext">1 / 12</div>
+            <figure>
+                <img src="image/cep.png" style="width:100%">
+                <figcaption>Descrição da imagem de CEP</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 12</div>
+            <figure>
+                <img src="image/tempo.png" style="width:100%">
+                <figcaption>Descrição da previsão do tempo</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 12</div>
+            <figure>
+                <img src="image/cardapio.png" style="width:100%">
+                <figcaption>Descrição da imagem do cardápio</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 12</div>
+            <figure>
+                <img src="image/carro.png" style="width:100%">
+                <figcaption>Descrição da imagem do carro</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 12</div>
+            <figure>
+                <img src="image/Financas.png" style="width:100%">
+                <figcaption>Descrição da imagem de Finanças</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 12</div>
+            <figure>
+                <img src="image/templates.png" style="width:100%">
+                <figcaption>Descrição da imagem de templates</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">7 / 12</div>
+            <figure>
+                <img src="image/registro_os.png" style="width:100%">
+                <figcaption>Descrição do registro de OS</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">8 / 12</div>
+            <figure>
+                <img src="image/projetorBarber.png" style="width:100%">
+                <figcaption>Descrição da imagem do projetor Barber</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">9 / 12</div>
+            <figure>
+                <img src="image/Anotacao.png" style="width:100%">
+                <figcaption>Descrição da imagem de Anotações</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">10 / 12</div>
+            <figure>
+                <img src="image/Registro.png" style="width:100%">
+                <figcaption>Descrição da imagem de Registro</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">11 / 12</div>
+            <figure>
+                <img src="image/conversor.png" style="width:100%">
+                <figcaption>Descrição da imagem do Conversor</figcaption>
+            </figure>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">12 / 12</div>
+            <figure>
+                <img src="image/gerador.png" style="width:100%">
+                <figcaption>Descrição do Gerador de senha</figcaption>
+            </figure>
+        </div>        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>        
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/cep.png" style="width:100%" onclick="currentSlide(1)" alt="cep">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/tempo.png" style="width:100%" onclick="currentSlide(2)" alt="Previsao do Tempo">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/cardapio.png" style="width:100%" onclick="currentSlide(3)" alt="Lanchonete">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/carro.png" style="width:100%" onclick="currentSlide(4)" alt="ConsultaCarros">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/Financas.png" style="width:100%" onclick="currentSlide(5)" alt="Banco Finanças">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/templates.png" style="width:100%" onclick="currentSlide(6)" alt="Templates | Blog">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/registro_os.png" style="width:100%" onclick="currentSlide(7)" alt="Registro OS">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/projetorBarber.png" style="width:100%" onclick="currentSlide(8)" alt="Barber Shop">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/Anotacao.png" style="width:100%" onclick="currentSlide(9)" alt="Anotações">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/Registro.png" style="width:100%" onclick="currentSlide(10)" alt="Registro e Despesas">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/conversor.png" style="width:100%" onclick="currentSlide(11)" alt="Conversor de Moedas">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="image/gerador.png" style="width:100%" onclick="currentSlide(12)" alt="Gerador de Senha">
+        </div>
+    </div>
+</div>
+
+<section class="contato" id="contato">
+    <div class="heading">
+        <h2 data-anime="top">Contato</h2>
+        <p data-anime="top" style="letter-spacing: 0.2em; font-size: 25px;">Onde me encontrar:</p>
+        <div class="redes-sociais">
+            <ul data-anime="buttom" class="icons">
+                <li><a href="https://wa.me/5532988075035" class="fab fa-whatsapp fa-2x" target="_blank"></a></li> 
+                <li><a href="https://www.instagram.com/gldasilva17/" class="fab fa-instagram fa-2x" target="_blank"></a></li>
+                <li><a href="https://www.linkedin.com/in/geraldo-luiz-da-silva-7a1818a7/" class="fab fa-linkedin fa-2x" target="_blank"></a></li>
+                <li><a href="https://github.com/Geeh17" target="_blank" class="fab fa-github fa-2x"></a></li>
+                <li><a href="mailto:geraldoluis1913@hotmail.com" class="far fa-envelope fa-2x"></a></li>
+            </ul>
+            <p data-anime="bottom" style="margin-top: 50px;">Se você quiser conversar, <br> Por favor, entre em contato!</p>
+        </div>
+    </div>
+</section>
+<a onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fas fa-chevron-up"></i></a>
+<footer>
+    <p>© <span id="hora"></span> Geraldo Luiz. Todos os direitos reservados.</p>
+</footer>
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
