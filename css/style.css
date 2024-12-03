@@ -797,12 +797,12 @@ img.hover-shadow {
 
 .text {
     color: white;
-    font-size: 2vw; /* Usar unidades relativas */
+    font-size: 2vw; 
     position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
 }
 
 .sci {
@@ -815,27 +815,27 @@ img.hover-shadow {
 
 @media (max-width: 768px) {
     .text {
-        font-size: 4vw; /* Aumenta em telas menores */
-        padding: 10px; /* Adiciona um pouco de espaçamento */
+        font-size: 4vw; 
+        padding: 10px;
     }
 
     .sci {
-        flex-direction: column; /* Muda a direção para coluna em telas menores */
-        top: 70%; /* Ajusta a posição */
+        flex-direction: column; 
+        top: 70%;
     }
 
     .sci li {
-        margin: 5px 0; /* Margem vertical entre itens */
+        margin: 5px 0; 
     }
 }
 
 @media (max-width: 480px) {
     .text {
-        font-size: 5vw; /* Aumenta ainda mais para dispositivos muito pequenos */
+        font-size: 5vw; 
     }
 
     .sci {
-        top: 60%; /* Move um pouco mais para cima */
+        top: 60%; 
     }
 }
 
@@ -1083,33 +1083,31 @@ i:hover {
     cursor: cell;
 }
 footer {
-    background-color: black; /* Cor de fundo contrastante */
-    color: white; /* Texto branco para visibilidade */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px 0; /* Espaçamento em cima e embaixo */
-    position: relative; /* Para garantir que ele fique bem posicionado */
-    width: 100%; /* Largura total */
+    background-color: black;
+    color: white;
+    text-align: center; 
+    position: relative; 
+    width: 100%; 
 }
 
 footer p {
-    margin: 0; /* Remove margens padrão */
-    font-size: 16px; /* Tamanho de fonte padrão */
-    font-family: 'Poppins', sans-serif; /* Fonte consistente */
+    margin: 0; 
+    font-size: 16px; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 footer a {
-    color: #00BFFF; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhados */
+    color: #00BFFF; 
+    text-decoration: none; 
 }
 
 footer a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline; 
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     footer p {
-        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+        font-size: 14px; 
     }
 }
 
