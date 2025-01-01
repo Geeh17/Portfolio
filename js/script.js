@@ -31,7 +31,7 @@ function inserir(letra) {
 window.onload = digitar;
 
 const div = document.getElementById('log');
-const textos = ['Analista de sistema C# | SQL Server', 'Freelancer Front-End Next.js | React'];
+const textos = ['Analista de sistema C# | SQL Server', 'Freelancer FullStack'];
 
 function escrever(str, done) {
     const char = str.split('').reverse();

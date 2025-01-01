@@ -6,7 +6,7 @@ Iniciei meu portfólio em janeiro de 2022, com projetos desenvolvidos com base e
 
 ## Referência usei essas em duvidas ao longo dos projetos e do portfolio
 
- - [Consulta](https://openbase.com/)
+ - [Documentação](https://devdocs.io/)
  - [Icones](https://iconify.design/)
  - [Imagens](https://www.iconfinder.com/)
  - [Duvidas](https://www.youtube.com/?hl=pt&gl=BR)
@@ -16,15 +16,12 @@ Iniciei meu portfólio em janeiro de 2022, com projetos desenvolvidos com base e
 
 ## 🚀 Sobre mim
 Analista de sistema C# | SQL Server
-Freelancer Front-End Next.js | React
-
+Freelancer FullStack
 
 ## Aprendizados
 
 Adquiri diversas técnicas que esclareceram minhas dúvidas, tanto em JavaScript quanto em CSS.
 
-## Documentação
 
-[Documentação](https://devdocs.io/)
 
 
