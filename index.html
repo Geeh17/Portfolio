@@ -1,488 +1,1009 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geraldo Luiz - Portfólio</title>
-    <meta name="description" content="Analista de Sistemas, Desenvolvedor Front end, React Js">
-    <meta name="keywords" content="Analista de Sistemas, Desenvolvedor Front end, React Js">
-    <meta name="author" content="Geraldo Luiz">
+    <meta
+      name="description"
+      content="Analista de Sistemas, Desenvolvedor Front end, React Js"
+    />
+    <meta
+      name="keywords"
+      content="Analista de Sistemas, Desenvolvedor Front end, React Js"
+    />
+    <meta name="author" content="Geraldo Luiz" />
     <meta name="copyright" content="© 2024 Geraldo Luiz" />
-    <meta property="og:title" content="Portfólio | Geraldo Luiz - Desenvolvedor Front-end" />
-    <meta property="og:description" content="Analista de Sistemas, Desenvolvedor Front-end, React Js." />
+    <meta
+      property="og:title"
+      content="Portfólio | Geraldo Luiz - Desenvolvedor Front-end"
+    />
+    <meta
+      property="og:description"
+      content="Analista de Sistemas, Desenvolvedor Front-end, React Js."
+    />
     <meta property="og:image" content="image/icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon" />
+  </head>
 
-<body class="show">
+  <body class="show">
     <header>
-    <a href="#home" class="logo" aria-label="Geraldo Luiz Portfolio">Geraldo Luiz</a>
-    <div class="toggle" onclick="toggleMenu()" aria-label="Menu Toggle"></div>
-    <nav>
+      <a href="#home" class="logo" aria-label="Geraldo Luiz Portfolio"
+        >Geraldo Luiz</a
+      >
+      <div class="toggle" onclick="toggleMenu()" aria-label="Menu Toggle"></div>
+      <nav>
         <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#sobre-mim" onclick="toggleMenu()">Sobre mim</a></li>
-            <li><a href="#tecnologias" onclick="toggleMenu()">Tecnologias</a></li>
-            <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
-            <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#sobre-mim" onclick="toggleMenu()">Sobre mim</a></li>
+          <li><a href="#tecnologias" onclick="toggleMenu()">Tecnologias</a></li>
+          <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<section class="banner" id="home">
-    <div class="textBx" style="animation: slide-bottom 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;">
+    <section class="banner" id="home">
+      <div
+        class="textBx"
+        style="
+          animation: slide-bottom 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        "
+      >
         <h2><span>Geraldo Luiz</span></h2>
         <h3 id="result" role="alert"></h3>
         <h3 id="log"></h3>
         <a href="#sobre-mim" class="btn">Sobre mim</a>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="sobre-mim" id="sobre-mim">
-    <div class="heading">
+    <section class="sobre-mim" id="sobre-mim">
+      <div class="heading">
         <h2 data-anime="top">Sobre mim</h2>
-    </div>
-    
-    <div class="content">
-        <div class="contentBx w50">
-            <p data-anime="top">
-                Atualmente, atuo como <strong>Analista de Sistemas Jr</strong>, com especialização em <strong>C#</strong> e <strong>SQL Server</strong>.
-                Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> pelo Instituto Vianna Júnior, em Juiz de Fora/MG.
-            </p>
-            
-            <p data-anime="top">
-                Sou apaixonado por <strong>inovação</strong> e pela <strong>transformação de ideias em soluções escaláveis e eficientes</strong>, 
-                sempre buscando aplicar as melhores práticas e padrões modernos no desenvolvimento de software.
-            </p>
-            
-            <p data-anime="top">
-                Acredito que <strong>talento e genialidade</strong> são importantes, mas <strong>persistência e determinação</strong> são os verdadeiros diferenciais na construção de resultados consistentes.
-            </p>
-            
-            <p data-anime="top"><strong>🎓 Certificações</strong></p>
-            <ul data-anime="top" class="competencias">
-                <li>Backend com .NET – Randstad</li>
-                <li>Clean Architecture Essencial – ASP.NET Core com C#</li>
-                <li>Banco de Dados: Oracle PL/SQL – IFRS</li>
-                <li>Administrador de Banco de Dados – IFRS</li>
-            </ul>
-            
-            <p data-anime="top"><strong>🛠️ Principais Competências</strong></p>
-            
-            <p data-anime="top"><strong>💻 Desenvolvimento Back-End</strong></p>
-            <ul data-anime="top" class="competencias">
-                <li>C# e .NET Core</li>
-                <li>Node.js com Prisma</li>
-                <li>Padrões de Projeto (GoF): Criacionais e Estruturais com .NET e C#</li>
-            </ul>
-            
-            <p data-anime="top"><strong>🗄️ Banco de Dados</strong></p>
-            <ul data-anime="top" class="competencias">
-                <li>SQL Server 2019</li>
-                <li>MongoDB</li>
-                <li>Modelagem de dados e otimização de consultas</li>
-            </ul>
-            
-            <p data-anime="top"><strong>🎨 Desenvolvimento Front-End</strong></p>
-            <ul data-anime="top" class="competencias">
-                <li>React e React Native</li>
-                <li>Tailwind CSS</li>
-            </ul>                    
+      </div>
 
-            <a data-anime="top" href="https://drive.google.com/file/d/1P9Wa6hgvPnZxrAdi6wOfvZOnTQbiXRqt/view?usp=sharing" target="_blank" class="btn curriculo" style="text-align: center;">
-                Confira o meu currículo <i class="fas fa-file-pdf fa-lg" style="padding-left: 8px;"></i>
-            </a>
+      <div class="content">
+        <div class="contentBx w50">
+          <p data-anime="top">
+            Atualmente, atuo como <strong>Analista de Sistemas Jr</strong>, com
+            especialização em <strong>C#</strong> e <strong>SQL Server</strong>.
+            Sou formado em
+            <strong>Análise e Desenvolvimento de Sistemas</strong> pelo
+            Instituto Vianna Júnior, em Juiz de Fora/MG.
+          </p>
+
+          <p data-anime="top">
+            Sou apaixonado por <strong>inovação</strong> e pela
+            <strong
+              >transformação de ideias em soluções escaláveis e
+              eficientes</strong
+            >, sempre buscando aplicar as melhores práticas e padrões modernos
+            no desenvolvimento de software.
+          </p>
+
+          <p data-anime="top">
+            Acredito que <strong>talento e genialidade</strong> são importantes,
+            mas <strong>persistência e determinação</strong> são os verdadeiros
+            diferenciais na construção de resultados consistentes.
+          </p>
+
+          <p data-anime="top"><strong>🎓 Formação Acadêmica</strong></p>
+          <ul data-anime="top" class="competencias">
+            <li>
+              MBA em Desenvolvimento Full Stack – Unyleya (2025 - em andamento)
+            </li>
+            <li>
+              Desenvolvimento de Sistemas com C# – Unyleya (2025 - em andamento)
+            </li>
+            <li>
+              Tecnólogo em Análise e Desenvolvimento de Sistemas – Instituto
+              Vianna Júnior (2021 - 2024)
+            </li>
+            <li>
+              Técnico em Programação de Computadores – Faculdade Microlins (2014
+              - 2016)
+            </li>
+            <li>
+              Técnico em Redes de Computadores – Faculdade Microlins (2014 -
+              2015)
+            </li>
+          </ul>
+
+          <p data-anime="top"><strong>🎓 Certificações</strong></p>
+          <ul data-anime="top" class="competencias">
+            <li>Backend com .NET – Randstad</li>
+            <li>Clean Architecture Essencial – ASP.NET Core com C#</li>
+            <li>Banco de Dados: Oracle PL/SQL – IFRS</li>
+            <li>Administrador de Banco de Dados – IFRS</li>
+          </ul>
+
+          <p data-anime="top"><strong>🛠️ Principais Competências</strong></p>
+
+          <p data-anime="top"><strong>💻 Desenvolvimento Back-End</strong></p>
+          <ul data-anime="top" class="competencias">
+            <li>C# e .NET Core</li>
+            <li>Node.js com Prisma</li>
+            <li>
+              Padrões de Projeto (GoF): Criacionais e Estruturais com .NET e C#
+            </li>
+          </ul>
+
+          <p data-anime="top"><strong>🗄️ Banco de Dados</strong></p>
+          <ul data-anime="top" class="competencias">
+            <li>SQL Server 2019</li>
+            <li>MongoDB</li>
+            <li>Modelagem de dados e otimização de consultas</li>
+          </ul>
+
+          <p data-anime="top"><strong>🎨 Desenvolvimento Front-End</strong></p>
+          <ul data-anime="top" class="competencias">
+            <li>React e React Native</li>
+            <li>Tailwind CSS</li>
+          </ul>
+
+          <a
+            data-anime="top"
+            href="https://drive.google.com/file/d/1P9Wa6hgvPnZxrAdi6wOfvZOnTQbiXRqt/view?usp=sharing"
+            target="_blank"
+            class="btn curriculo"
+            style="text-align: center"
+          >
+            Confira o meu currículo
+            <i class="fas fa-file-pdf fa-lg" style="padding-left: 8px"></i>
+          </a>
         </div>
         <div class="w50">
-            <img data-anime="left" src="image/430.jpg" width="200" class="img img-th" alt="Geraldo Luiz">
+          <img
+            data-anime="left"
+            src="image/430.jpg"
+            width="200"
+            class="img img-th"
+            alt="Geraldo Luiz"
+          />
         </div>
-    </div>
-</section>
-<!-- Tecnologias -->
-<section class="tecnologias" id="tecnologias">
-    <div class="heading white">
+      </div>
+    </section>
+    <!-- Tecnologias -->
+    <section class="tecnologias" id="tecnologias">
+      <div class="heading white">
         <h2 data-anime="top">Tecnologias</h2>
-        <p data-anime="top" style="letter-spacing: 0.3em; font-size: 25px;">Confira as tecnologias que mais utilizo!</p>
+        <p data-anime="top" style="letter-spacing: 0.3em; font-size: 25px">
+          Confira as tecnologias que mais utilizo!
+        </p>
         <div data-anime="top">
-            <hr style="width: 100%; border: 0; height: 1px; background: #000; opacity: 0.1;">
+          <hr
+            style="
+              width: 100%;
+              border: 0;
+              height: 1px;
+              background: #000;
+              opacity: 0.1;
+            "
+          />
         </div>
-    </div>
-    <div class="content">
+      </div>
+      <div class="content">
         <div data-anime="top1" class="tecnologiasBx">
-            <span class="iconify" data-icon="vscode-icons:file-type-csharp" style="font-size:50px; color:#178600;"></span>
-            <h2>C#</h2>
-            <p>Linguagem de programação de alto nível que suporta múltiplos paradigmas.</p>
+          <span
+            class="iconify"
+            data-icon="vscode-icons:file-type-csharp"
+            style="font-size: 50px; color: #178600"
+          ></span>
+          <h2>C#</h2>
+          <p>
+            Linguagem de programação de alto nível que suporta múltiplos
+            paradigmas.
+          </p>
         </div>
         <div data-anime="top2" class="tecnologiasBx">
-            <i class="fas fa-database fa-lg" style="font-size:50px; color:black;"></i>
-            <h2>SQL</h2>
-            <p>Linguagem de consulta padrão para bancos de dados relacionais.</p>
+          <i
+            class="fas fa-database fa-lg"
+            style="font-size: 50px; color: black"
+          ></i>
+          <h2>SQL</h2>
+          <p>Linguagem de consulta padrão para bancos de dados relacionais.</p>
         </div>
         <div data-anime="top3" class="tecnologiasBx">
-            <i class="fab fa-react fa-lg" style="font-size:50px; color:#5ed3f3;"></i>
-            <h2>React</h2>
-            <p>Biblioteca para construção de interfaces de usuário (UI).</p>
+          <i
+            class="fab fa-react fa-lg"
+            style="font-size: 50px; color: #5ed3f3"
+          ></i>
+          <h2>React</h2>
+          <p>Biblioteca para construção de interfaces de usuário (UI).</p>
         </div>
         <div data-anime="top4" class="tecnologiasBx">
-            <span class="iconify" data-icon="vscode-icons:file-type-tailwind" style="font-size:50px;"></span>
-            <h2>Tailwind CSS</h2>
-            <p>Framework CSS com uma abordagem "utility-first", que não fornece classes predefinidas.</p>
+          <span
+            class="iconify"
+            data-icon="vscode-icons:file-type-tailwind"
+            style="font-size: 50px"
+          ></span>
+          <h2>Tailwind CSS</h2>
+          <p>
+            Framework CSS com uma abordagem "utility-first", que não fornece
+            classes predefinidas.
+          </p>
         </div>
         <div data-anime="top5" class="tecnologiasBx">
-            <span class="iconify" data-icon="logos:nodejs-icon" style="font-size:50px;"></span>
-            <h2>Node.js</h2>
-            <p>Software de código aberto, multiplataforma, baseado no interpretador V8 do Google, que permite a execução de códigos JavaScript fora de um navegador web.</p>
+          <span
+            class="iconify"
+            data-icon="logos:nodejs-icon"
+            style="font-size: 50px"
+          ></span>
+          <h2>Node.js</h2>
+          <p>
+            Software de código aberto, multiplataforma, baseado no interpretador
+            V8 do Google, que permite a execução de códigos JavaScript fora de
+            um navegador web.
+          </p>
         </div>
-        
-    </div>
+      </div>
 
-    <div class="heading white">
-        <p data-anime="top" style="font-size: 25px; padding-top: 100px;">Outras tecnologias que estou aperfeiçoando!</p>
+      <div class="heading white">
+        <p data-anime="top" style="font-size: 25px; padding-top: 100px">
+          Outras tecnologias que estou aperfeiçoando!
+        </p>
         <div data-anime="top">
-            <hr style="width: 100%; border: 1px dotted #000; opacity: 0.2;">
+          <hr style="width: 100%; border: 1px dotted #000; opacity: 0.2" />
         </div>
-    </div>
-    <div class="content">
+      </div>
+      <div class="content">
         <div data-anime="top1" class="tecnologiasBx">
-            <i class="fab fa-react fa-lg" style="font-size:50px; color:#5ed3f3;"></i>
-            <h2>React Native</h2>
-            <p>Framework para desenvolvimento de aplicativos móveis para Android e iOS.</p>
+          <i
+            class="fab fa-react fa-lg"
+            style="font-size: 50px; color: #5ed3f3"
+          ></i>
+          <h2>React Native</h2>
+          <p>
+            Framework para desenvolvimento de aplicativos móveis para Android e
+            iOS.
+          </p>
         </div>
         <div data-anime="top2" class="tecnologiasBx">
-            <span class="iconify" data-icon="logos:nextjs" style="font-size:20px;"></span>
-            <h2>Next.js</h2>
-            <p>Framework de desenvolvimento web de código aberto criado pela Vercel, que facilita a construção de aplicativos React.</p>
+          <span
+            class="iconify"
+            data-icon="logos:nextjs"
+            style="font-size: 20px"
+          ></span>
+          <h2>Next.js</h2>
+          <p>
+            Framework de desenvolvimento web de código aberto criado pela
+            Vercel, que facilita a construção de aplicativos React.
+          </p>
         </div>
         <div data-anime="top3" class="tecnologiasBx">
-            <span class="iconify" data-icon="logos:typescript-icon" style="font-size:50px;"></span>
-            <h2>TypeScript</h2>
-            <p>Superconjunto de JavaScript que adiciona tipagem estática opcional à linguagem.</p>
+          <span
+            class="iconify"
+            data-icon="logos:typescript-icon"
+            style="font-size: 50px"
+          ></span>
+          <h2>TypeScript</h2>
+          <p>
+            Superconjunto de JavaScript que adiciona tipagem estática opcional à
+            linguagem.
+          </p>
         </div>
         <div data-anime="top4" class="tecnologiasBx">
-            <span class="iconify" data-icon="logos:mongodb" style="font-size:25px; color:#47A248;"></span>
-            <h2>MongoDB</h2>
-            <p>Banco de dados orientado a documentos, cross-platform e disponível em código aberto.</p>
+          <span
+            class="iconify"
+            data-icon="logos:mongodb"
+            style="font-size: 25px; color: #47a248"
+          ></span>
+          <h2>MongoDB</h2>
+          <p>
+            Banco de dados orientado a documentos, cross-platform e disponível
+            em código aberto.
+          </p>
         </div>
         <div data-anime="top5" class="tecnologiasBx">
-            <span class="iconify" data-icon="logos:prisma" style="font-size:25px; color:#0C344B;"></span>
-            <h2>Prisma</h2>
-            <p>O Prisma é um ORM feito para ser utilizado com JavaScript e TypeScript, com o objetivo de prover facilidades no acesso e gerenciamento de bancos de dados.</p>
+          <span
+            class="iconify"
+            data-icon="logos:prisma"
+            style="font-size: 25px; color: #0c344b"
+          ></span>
+          <h2>Prisma</h2>
+          <p>
+            O Prisma é um ORM feito para ser utilizado com JavaScript e
+            TypeScript, com o objetivo de prover facilidades no acesso e
+            gerenciamento de bancos de dados.
+          </p>
         </div>
         <div data-anime="top6" class="tecnologiasBx">
-            <span class="iconify" data-icon="logos:jest" style="font-size:25px; color:#C21325;"></span>
-            <h2>Jest</h2>
-            <p>Jest é um framework de testes em JavaScript focado em simplicidade, com suporte para mocks, snapshots e testes assíncronos, ideal para aplicações modernas.</p>
-        </div>             
-    </div>
-</section>
-<!-- Projetos -->
-<section class="projetos" id="projetos">
-    <div class="heading">
-        <h2 data-anime="top">Projetos</h2>
-        <p data-anime="top" style="letter-spacing: 0.3em; font-size: 25px;">Confira os meus Projetos!</p>
-        <div data-anime="top">
-            <hr style="width: 100%; border: 0; height: 1px; background: #000; opacity: 0.1;">
+          <span
+            class="iconify"
+            data-icon="logos:jest"
+            style="font-size: 25px; color: #c21325"
+          ></span>
+          <h2>Jest</h2>
+          <p>
+            Jest é um framework de testes em JavaScript focado em simplicidade,
+            com suporte para mocks, snapshots e testes assíncronos, ideal para
+            aplicações modernas.
+          </p>
         </div>
-    </div>
-    <div class="content">
+      </div>
+    </section>
+    <!-- Projetos -->
+    <section class="projetos" id="projetos">
+      <div class="heading">
+        <h2 data-anime="top">Projetos</h2>
+        <p data-anime="top" style="letter-spacing: 0.3em; font-size: 25px">
+          Confira os meus Projetos!
+        </p>
+        <div data-anime="top">
+          <hr
+            style="
+              width: 100%;
+              border: 0;
+              height: 1px;
+              background: #000;
+              opacity: 0.1;
+            "
+          />
+        </div>
+      </div>
+      <div class="content">
         <div data-anime="top1" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/cep.png" alt="Consulta de CEP">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Consulta CEP<br><span class="text-span">JavaScript | CSS</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(1)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/ConsultaCep" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/cep.png"
+            alt="Consulta de CEP"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Consulta CEP<br /><span class="text-span"
+                  >JavaScript | CSS</span
+                >
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(1)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/ConsultaCep"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top2" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/tempo.png" alt="Previsão do Tempo">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Previsão do Tempo<br><span class="text-span">JavaScript | HTML</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(2)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/Previsao-do-Tempo" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/tempo.png"
+            alt="Previsão do Tempo"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Previsão do Tempo<br /><span class="text-span"
+                  >JavaScript | HTML</span
+                >
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(2)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/Previsao-do-Tempo"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top3" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/anotacao.png" alt="Cardápio">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Anotacao<br><span class="text-span">React | CSS </span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(3)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/SistemadeAnota-es" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/anotacao.png"
+            alt="Cardápio"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Anotacao<br /><span class="text-span">React | CSS </span>
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(3)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/SistemadeAnota-es"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top4" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/carro.png" alt="Consulta de Carros">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Consulta de Carros<br><span class="text-span">ASP.NET Core Web AP | Blazor </span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(4)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/ConsultaCarros" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/carro.png"
+            alt="Consulta de Carros"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Consulta de Carros<br /><span class="text-span"
+                  >ASP.NET Core Web AP | Blazor
+                </span>
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(4)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/ConsultaCarros"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top5" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/gestao.png" alt="Sistema de produtos">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Sistema de produtos<br><span class="text-span">React | C#</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(5)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/GestaoV" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/gestao.png"
+            alt="Sistema de produtos"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Sistema de produtos<br /><span class="text-span"
+                  >React | C#</span
+                >
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(5)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="https://github.com/Geeh17/GestaoV" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top6" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/templates.png" alt="Templates">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Templates<br><span class="text-span">JavaScript | HTML</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(6)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/Ideias-para-Sites" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/templates.png"
+            alt="Templates"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Templates<br /><span class="text-span">JavaScript | HTML</span>
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(6)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/Ideias-para-Sites"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top7" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/registro_os.png" alt="Registro de Ordem de Serviço">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Registro Ordem de Serviço<br><span class="text-span">TypeScript | Tailwind</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(7)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/Controle-OS" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/advogados.png"
+            alt="Sistema de advogados"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Sistema de advogados<br /><span class="text-span"
+                  >TypeScript | Tailwind</span
+                >
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(7)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/Controle-OS"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top8" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/projetorBarber.png" alt="BarberShop">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">BarberShop<br><span class="text-span">JavaScript | HTML</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(8)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/Barbearia" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/projetorBarber.png"
+            alt="BarberShop"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                BarberShop<br /><span class="text-span">JavaScript | HTML</span>
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(8)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="https://github.com/Geeh17/Barbearia" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top9" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/AppPromo.png" alt="AppPromoções">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">AppPromo<br><span class="text-span">React Native | TypeScript</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(9)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/AppPromocoes" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/AppPromo.png"
+            alt="AppPromoções"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                AppPromo<br /><span class="text-span"
+                  >React Native | TypeScript</span
+                >
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(9)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/AppPromocoes"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top10" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/Registro.png" alt="Registros e Despesas">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Registros e Despesas<br><span class="text-span">JavaScript | HTML</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(10)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/Despesas-JS" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/Registro.png"
+            alt="Registros e Despesas"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Registros e Despesas<br /><span class="text-span"
+                  >JavaScript | HTML</span
+                >
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(10)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/Despesas-JS"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top11" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/LojaMoveis.png" alt="Loja de Móveis">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Loja de Móveis<br><span class="text-span">ASP.NET Core MVC | Bootstrap</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(11)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/Loja_Moveis" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/LojaMoveis.png"
+            alt="Loja de Móveis"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Loja de Móveis<br /><span class="text-span"
+                  >ASP.NET Core MVC | Bootstrap</span
+                >
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(11)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/Loja_Moveis"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
         <div data-anime="top12" class="projetosBx">
-            <img class="hover-shadow cursor" src="image/api.png" alt="Api de fundos de investimentos">
-            <div>
-                <div class="overlay">
-                    <h3 class="text">Api de fundos de investimentos<br><span class="text-span" id="em-breve">Node Js | Prisma</span></h3>
-                    <ul class="sci">
-                        <li style="--i:1;"><a class="zoom-in"><i onclick="openModal();currentSlide(12)" class="fas fa-plus-circle"></i></a></li>
-                        <li style="--i:2;"><a href="https://github.com/Geeh17/SistemadeControleFundosImobiliarios" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+          <img
+            class="hover-shadow cursor"
+            src="image/api.png"
+            alt="Api de fundos de investimentos"
+          />
+          <div>
+            <div class="overlay">
+              <h3 class="text">
+                Api de fundos de investimentos<br /><span
+                  class="text-span"
+                  id="em-breve"
+                  >Node Js | Prisma</span
+                >
+              </h3>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a class="zoom-in"
+                    ><i
+                      onclick="openModal();currentSlide(12)"
+                      class="fas fa-plus-circle"
+                    ></i
+                  ></a>
+                </li>
+                <li style="--i: 2">
+                  <a
+                    href="https://github.com/Geeh17/SistemadeControleFundosImobiliarios"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="heading repositorio">
-        <a data-anime="top" href="https://github.com/Geeh17?tab=repositories" target="_blank">Repositórios no GitHub</a>
-    </div>
-</section>
+      </div>
+      <div class="heading repositorio">
+        <a
+          data-anime="top"
+          href="https://github.com/Geeh17?tab=repositories"
+          target="_blank"
+          >Repositórios no GitHub</a
+        >
+      </div>
+    </section>
 
-<!-- Modal de Imagens -->
-<div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
+    <!-- Modal de Imagens -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
         <div class="mySlides">
-            <div class="numbertext">1 / 12</div>
-            <figure>
-                <img src="image/cep.png" style="width:100%">
-            </figure>
+          <div class="numbertext">1 / 12</div>
+          <figure>
+            <img src="image/cep.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">2 / 12</div>
-            <figure>
-                <img src="image/tempo.png" style="width:100%">
-            </figure>
+          <div class="numbertext">2 / 12</div>
+          <figure>
+            <img src="image/tempo.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">3 / 12</div>
-            <figure>
-                <img src="image/anotacao.png" style="width:100%">
-            </figure>
+          <div class="numbertext">3 / 12</div>
+          <figure>
+            <img src="image/anotacao.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">4 / 12</div>
-            <figure>
-                <img src="image/carro.png" style="width:100%">
-            </figure>
+          <div class="numbertext">4 / 12</div>
+          <figure>
+            <img src="image/carro.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">5 / 12</div>
-            <figure>
-                <img src="image/gestao.png" style="width:100%">
-            </figure>
+          <div class="numbertext">5 / 12</div>
+          <figure>
+            <img src="image/gestao.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">6 / 12</div>
-            <figure>
-                <img src="image/templates.png" style="width:100%">
-            </figure>
+          <div class="numbertext">6 / 12</div>
+          <figure>
+            <img src="image/templates.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">7 / 12</div>
-            <figure>
-                <img src="image/registro_os.png" style="width:100%">
-            </figure>
+          <div class="numbertext">7 / 12</div>
+          <figure>
+            <img src="image/advogados.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">8 / 12</div>
-            <figure>
-                <img src="image/projetorBarber.png" style="width:100%">
-            </figure>
+          <div class="numbertext">8 / 12</div>
+          <figure>
+            <img src="image/projetorBarber.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">9 / 12</div>
-            <figure>
-                <img src="image/AppPromo.png" style="width:100%">
-            </figure>
+          <div class="numbertext">9 / 12</div>
+          <figure>
+            <img src="image/AppPromo.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">10 / 12</div>
-            <figure>
-                <img src="image/registro.png" style="width:100%">
-            </figure>
+          <div class="numbertext">10 / 12</div>
+          <figure>
+            <img src="image/registro.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">11 / 12</div>
-            <figure>
-                <img src="image/lojaMoveis.png" style="width:100%">
-            </figure>
+          <div class="numbertext">11 / 12</div>
+          <figure>
+            <img src="image/lojaMoveis.png" style="width: 100%" />
+          </figure>
         </div>
         <div class="mySlides">
-            <div class="numbertext">12 / 12</div>
-            <figure>
-                <img src="image/api.png" style="width:100%">
-            </figure>
-        </div>        
+          <div class="numbertext">12 / 12</div>
+          <figure>
+            <img src="image/api.png" style="width: 100%" />
+          </figure>
+        </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>        
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <div class="caption-container">
-            <p id="caption"></p>
+          <p id="caption"></p>
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/cep.png" style="width:100%" onclick="currentSlide(1)" alt="cep">
+          <img
+            class="demo cursor"
+            src="image/cep.png"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="cep"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/tempo.png" style="width:100%" onclick="currentSlide(2)" alt="Previsao do Tempo">
+          <img
+            class="demo cursor"
+            src="image/tempo.png"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="Previsao do Tempo"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/anotacao.png" style="width:100%" onclick="currentSlide(3)" alt="Anotacao">
+          <img
+            class="demo cursor"
+            src="image/anotacao.png"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="Anotacao"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/carro.png" style="width:100%" onclick="currentSlide(4)" alt="ConsultaCarros">
+          <img
+            class="demo cursor"
+            src="image/carro.png"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="ConsultaCarros"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/gestao.png" style="width:100%" onclick="currentSlide(5)" alt="Sistema de Prdutos">
+          <img
+            class="demo cursor"
+            src="image/gestao.png"
+            style="width: 100%"
+            onclick="currentSlide(5)"
+            alt="Sistema de Prdutos"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/templates.png" style="width:100%" onclick="currentSlide(6)" alt="Templates | Blog">
+          <img
+            class="demo cursor"
+            src="image/templates.png"
+            style="width: 100%"
+            onclick="currentSlide(6)"
+            alt="Templates | Blog"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/registro_os.png" style="width:100%" onclick="currentSlide(7)" alt="Registro OS">
+          <img
+            class="demo cursor"
+            src="image/advogados.png"
+            style="width: 100%"
+            onclick="currentSlide(7)"
+            alt="Sistema de advogados"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/projetorBarber.png" style="width:100%" onclick="currentSlide(8)" alt="Barber Shop">
+          <img
+            class="demo cursor"
+            src="image/projetorBarber.png"
+            style="width: 100%"
+            onclick="currentSlide(8)"
+            alt="Barber Shop"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/AppPromo.png" style="width:100%" onclick="currentSlide(9)" alt="AppPromoções">
+          <img
+            class="demo cursor"
+            src="image/AppPromo.png"
+            style="width: 100%"
+            onclick="currentSlide(9)"
+            alt="AppPromoções"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/registro.png" style="width:100%" onclick="currentSlide(10)" alt="Registro e Despesas">
+          <img
+            class="demo cursor"
+            src="image/registro.png"
+            style="width: 100%"
+            onclick="currentSlide(10)"
+            alt="Registro e Despesas"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/lojaMoveis.png" style="width:100%" onclick="currentSlide(11)" alt="Loja de Móveis">
+          <img
+            class="demo cursor"
+            src="image/lojaMoveis.png"
+            style="width: 100%"
+            onclick="currentSlide(11)"
+            alt="Loja de Móveis"
+          />
         </div>
         <div class="column">
-            <img class="demo cursor" src="image/api.png.png" style="width:100%" onclick="currentSlide(12)" alt="Api de fundos de investimentos">
+          <img
+            class="demo cursor"
+            src="image/api.png.png"
+            style="width: 100%"
+            onclick="currentSlide(12)"
+            alt="Api de fundos de investimentos"
+          />
         </div>
+      </div>
     </div>
-</div>
 
-<section class="contato" id="contato">
-    <div class="heading">
+    <section class="contato" id="contato">
+      <div class="heading">
         <h2 data-anime="top">Contato</h2>
-        <p data-anime="top" style="letter-spacing: 0.2em; font-size: 25px;">Onde me encontrar:</p>
+        <p data-anime="top" style="letter-spacing: 0.2em; font-size: 25px">
+          Onde me encontrar:
+        </p>
         <div class="redes-sociais">
-            <ul data-anime="buttom" class="icons">
-                <li><a href="https://wa.me/5532988075035" class="fab fa-whatsapp fa-2x" target="_blank"></a></li> 
-                <li><a href="https://www.instagram.com/gldasilva17/" class="fab fa-instagram fa-2x" target="_blank"></a></li>
-                <li><a href="https://www.linkedin.com/in/geraldo-luiz-da-silva-7a1818a7/" class="fab fa-linkedin fa-2x" target="_blank"></a></li>
-                <li><a href="https://github.com/Geeh17" target="_blank" class="fab fa-github fa-2x"></a></li>
-                <li><a href="mailto:geraldoluis1913@hotmail.com" class="far fa-envelope fa-2x"></a></li>
-            </ul>
-            <p data-anime="bottom" style="margin-top: 50px;">Se você quiser conversar, <br> Por favor, entre em contato!</p>
+          <ul data-anime="buttom" class="icons">
+            <li>
+              <a
+                href="https://wa.me/5532988075035"
+                class="fab fa-whatsapp fa-2x"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/gldasilva17/"
+                class="fab fa-instagram fa-2x"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/geraldo-luiz-da-silva-7a1818a7/"
+                class="fab fa-linkedin fa-2x"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Geeh17"
+                target="_blank"
+                class="fab fa-github fa-2x"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="mailto:geraldoluis1913@hotmail.com"
+                class="far fa-envelope fa-2x"
+              ></a>
+            </li>
+          </ul>
+          <p data-anime="bottom" style="margin-top: 50px">
+            Se você quiser conversar, <br />
+            Por favor, entre em contato!
+          </p>
         </div>
-    </div>
-</section>
-<a onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fas fa-chevron-up"></i></a>
-<footer>
-    <p>© <span id="hora"></span> Geraldo Luiz. Todos os direitos reservados.</p>
-</footer>
-<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-<script src="js/script.js" type="text/javascript"></script>
-</body>
+      </div>
+    </section>
+    <a onclick="topFunction()" id="back-to-top" title="Go to top"
+      ><i class="fas fa-chevron-up"></i
+    ></a>
+    <footer>
+      <p>
+        © <span id="hora"></span> Geraldo Luiz. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+  </body>
 </html>
