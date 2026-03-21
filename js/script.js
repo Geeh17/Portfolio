@@ -2,8 +2,9 @@
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   header.classList.toggle("stick", window.scrollY > 0);
+  scrollFunction();
+  animeScroll();
 });
-
 function toggleMenu() {
   const menuToggle = document.querySelector(".toggle");
   const menu = document.querySelector(".menu");
@@ -89,12 +90,7 @@ function animeScroll() {
   });
 }
 
-window.addEventListener("scroll", animeScroll);
-
 const backToTop = document.getElementById("back-to-top");
-window.onscroll = function () {
-  scrollFunction();
-};
 
 function scrollFunction() {
   backToTop.style.display =
