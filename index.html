@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Geraldo Luiz - Portfólio</title>
+    <title>Geraldo Luiz - Analista & Desenvolvedor Full Stack</title>
     <meta
       name="description"
-      content="Analista de Desenvolvimento de Sistemas com foco em C#, .NET Core, SQL Server, React e Node.js."
+      content="Analista de Desenvolvimento de Sistemas com foco em C#, .NET Core, SQL Server, React e Node.js. Desenvolvedor Full Stack com experiência em soluções robustas e escaláveis."
     />
     <meta
       name="keywords"
-      content="Analista de Sistemas, Desenvolvedor Back-end, C#, .NET Core, SQL Server, React, Node.js"
+      content="Analista de Sistemas, Desenvolvedor Full Stack, C#, .NET Core, SQL Server, React, Node.js"
     />
     <meta name="author" content="Geraldo Luiz" />
     <meta name="copyright" content="© 2026 Geraldo Luiz" />
     <meta
       property="og:title"
-      content="Portfólio | Geraldo Luiz - Desenvolvedor Front-end"
+      content="Portfólio | Geraldo Luiz - Analista & Desenvolvedor Full Stack"
     />
     <meta
       property="og:description"
-      content="Analista de Sistemas, Desenvolvedor Front-end, React Js."
+      content="Analista de Desenvolvimento de Sistemas com foco em C#, .NET Core, SQL Server, React e Node.js."
     />
     <meta property="og:image" content="image/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,14 +43,30 @@
       <a href="#home" class="logo" aria-label="Geraldo Luiz Portfolio"
         >Geraldo Luiz</a
       >
-      <div class="toggle" onclick="toggleMenu()" aria-label="Menu Toggle"></div>
+      <div
+        class="toggle"
+        onclick="toggleMenu()"
+        role="button"
+        aria-label="Abrir menu"
+        tabindex="0"
+      ></div>
       <nav>
         <ul class="menu">
           <li><a href="#home" onclick="toggleMenu()">Home</a></li>
           <li><a href="#sobre-mim" onclick="toggleMenu()">Sobre mim</a></li>
+          <li><a href="#experiencia" onclick="toggleMenu()">Experiência</a></li>
           <li><a href="#tecnologias" onclick="toggleMenu()">Tecnologias</a></li>
           <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
           <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+          <li>
+            <button
+              id="dark-toggle"
+              aria-label="Alternar dark mode"
+              title="Alternar dark mode"
+            >
+              🌙
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -77,9 +93,10 @@
       <div class="content">
         <div class="contentBx w50">
           <p data-anime="top">
-            Atualmente, atuo como analista de desenvolvimento de sistemas, com
-            foco em C#, .NET Core e SQL Server, desenvolvendo soluções robustas,
-            escaláveis e alinhadas a boas práticas de engenharia de software.
+            Atualmente, atuo como analista de desenvolvimento de sistemas com
+            mais de 5 anos de atuação na área de tecnologia, com foco em C#,
+            .NET Core e SQL Server, desenvolvendo soluções robustas, escaláveis
+            e alinhadas a boas práticas de engenharia de software.
           </p>
 
           <p data-anime="top">
@@ -97,18 +114,28 @@
 
           <p data-anime="top"><strong>🎓 Formação Acadêmica</strong></p>
           <ul data-anime="top" class="competencias">
-            <li>MBA em Desenvolvimento Full Stack – Unyleya</li>
+            <li>
+              Pós-Graduação em Engenharia de Software – Faculdade Metropolitana
+              (jan/2026 – dez/2026)
+            </li>
+            <li>
+              MBA em Desenvolvimento Full Stack – Unyleya (mai/2025 – out/2025)
+            </li>
             <li>
               Pós-Graduação em Desenvolvimento de Sistemas com C# – Unyleya
             </li>
             <li>
               Tecnólogo em Análise e Desenvolvimento de Sistemas – Instituto
-              Vianna Júnior
+              Vianna Júnior (2021 – 2024)
             </li>
             <li>
-              Técnico em Programação de Computadores – Faculdade Microlins
+              Técnico em Programação de Computadores – Faculdade Microlins (2014
+              – 2016)
             </li>
-            <li>Técnico em Redes de Computadores – Faculdade Microlins</li>
+            <li>
+              Técnico em Redes de Computadores – Faculdade Microlins (2014 –
+              2015)
+            </li>
           </ul>
 
           <p data-anime="top"><strong>🎓 Certificações</strong></p>
@@ -160,7 +187,7 @@
         <div class="w50">
           <img
             data-anime="left"
-            src="image/430.jpg"
+            src="image/430.jpeg"
             width="200"
             class="img img-th"
             alt="Geraldo Luiz"
@@ -168,6 +195,114 @@
         </div>
       </div>
     </section>
+
+    <!-- Experiência -->
+    <section class="experiencia" id="experiencia">
+      <div class="heading">
+        <h2 data-anime="top">Experiência</h2>
+        <p data-anime="top" style="letter-spacing: 0.3em; font-size: 25px">
+          Trajetória Profissional
+        </p>
+        <div data-anime="top">
+          <hr
+            style="
+              width: 100%;
+              border: 0;
+              height: 1px;
+              background: #000;
+              opacity: 0.1;
+            "
+          />
+        </div>
+      </div>
+
+      <div class="exp-lista">
+        <!-- Delage -->
+        <div class="exp-empresa" data-anime="top">
+          <h3>🏢 Delage — Juiz de Fora, MG</h3>
+
+          <div class="exp-cargo">
+            <h4>Analista de Desenvolvimento de Sistemas</h4>
+            <p class="exp-periodo">março de 2025 – Presente · 1 ano 4 meses</p>
+            <ul>
+              <li>
+                Criação, manutenção e otimização de procedures em SQL Server,
+                reduzindo o tempo de execução de rotinas críticas.
+              </li>
+              <li>
+                Análise de consultas para integração entre WMS e sistemas
+                externos (Knapp, Wintor), garantindo consistência e integridade
+                dos dados.
+              </li>
+              <li>
+                Correção de bugs e refatoração de código em C#, .NET, VB.Net,
+                XML e XSLT.
+              </li>
+              <li>
+                Desenvolvimento e manutenção de relatórios com SSRS (SQL Server
+                Reporting Services).
+              </li>
+              <li>
+                Participação em reuniões com clientes para levantamento e
+                validação de demandas técnicas.
+              </li>
+              <li>Controle de versão com Git.</li>
+            </ul>
+          </div>
+
+          <div class="exp-cargo">
+            <h4>Analista de Sistemas Jr.</h4>
+            <p class="exp-periodo">
+              agosto de 2022 – março de 2025 · 2 anos 9 meses
+            </p>
+            <ul>
+              <li>Manutenção e criação de procedures com SQL Server.</li>
+              <li>
+                Desenvolvimento de sistemas com XSLT, XML, C#, VB6 e VB.Net.
+              </li>
+              <li>Criação e manutenção de relatórios com Report Services.</li>
+            </ul>
+          </div>
+
+          <div class="exp-cargo">
+            <h4>Estagiário de Analista de Sistemas</h4>
+            <p class="exp-periodo">
+              junho de 2021 – julho de 2022 · 1 ano 2 meses
+            </p>
+            <ul>
+              <li>
+                Atividades práticas de manutenção de procedures, desenvolvimento
+                de sistemas e relatórios, com foco em aprendizado técnico.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Grupo Bahamas -->
+        <div class="exp-empresa" data-anime="top">
+          <h3>🏢 Grupo Bahamas S/A — Juiz de Fora, MG</h3>
+
+          <div class="exp-cargo">
+            <h4>Operador de Terminal</h4>
+            <p class="exp-periodo">julho de 2016 – junho de 2021 · 5 anos</p>
+            <ul>
+              <li>
+                Entrada e controle de dados em sistemas operacionais, garantindo
+                precisão e integridade das informações.
+              </li>
+              <li>
+                Monitoramento de hardware e execução de comandos para
+                processamento de dados.
+              </li>
+              <li>
+                Manutenção preventiva de terminais e suporte técnico básico.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Tecnologias -->
     <section class="tecnologias" id="tecnologias">
       <div class="heading white">
@@ -216,7 +351,6 @@
           <h2>React</h2>
           <p>Biblioteca para construção de interfaces de usuário (UI).</p>
         </div>
-
         <div data-anime="top5" class="tecnologiasBx">
           <span
             class="iconify"
@@ -259,8 +393,8 @@
           ></span>
           <h2>Next.js</h2>
           <p>
-            Framework de desenvolvimento web de código aberto criado pela
-            Vercel, que facilita a construção de aplicativos React.
+            Framework de desenvolvimento web criado pela Vercel que facilita a
+            construção de aplicativos React.
           </p>
         </div>
         <div data-anime="top3" class="tecnologiasBx">
@@ -295,9 +429,8 @@
           ></span>
           <h2>Prisma</h2>
           <p>
-            O Prisma é um ORM feito para ser utilizado com JavaScript e
-            TypeScript, com o objetivo de prover facilidades no acesso e
-            gerenciamento de bancos de dados.
+            ORM para JavaScript e TypeScript com o objetivo de facilitar o
+            acesso e gerenciamento de bancos de dados.
           </p>
         </div>
         <div data-anime="top6" class="tecnologiasBx">
@@ -308,13 +441,13 @@
           ></span>
           <h2>Jest</h2>
           <p>
-            Jest é um framework de testes em JavaScript focado em simplicidade,
-            com suporte para mocks, snapshots e testes assíncronos, ideal para
-            aplicações modernas.
+            Framework de testes em JavaScript focado em simplicidade, com
+            suporte para mocks, snapshots e testes assíncronos.
           </p>
         </div>
       </div>
     </section>
+
     <!-- Projetos -->
     <section class="projetos" id="projetos">
       <div class="heading">
@@ -344,9 +477,8 @@
           <div>
             <div class="overlay">
               <h3 class="text">
-                Consulta CEP<br /><span class="text-span"
-                  >JavaScript | CSS</span
-                >
+                Consulta CEP<br />
+                <span class="text-span">JavaScript | CSS</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -371,6 +503,7 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top2" class="projetosBx">
           <img
             class="hover-shadow cursor"
@@ -380,9 +513,8 @@
           <div>
             <div class="overlay">
               <h3 class="text">
-                Previsão do Tempo<br /><span class="text-span"
-                  >JavaScript | HTML</span
-                >
+                Previsão do Tempo<br />
+                <span class="text-span">JavaScript | HTML</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -407,16 +539,18 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top3" class="projetosBx">
           <img
             class="hover-shadow cursor"
             src="image/anotacao.png"
-            alt="Cardápio"
+            alt="Sistema de Anotações"
           />
           <div>
             <div class="overlay">
               <h3 class="text">
-                Anotacao<br /><span class="text-span">React | CSS </span>
+                Sistema de Anotações<br />
+                <span class="text-span">React | CSS</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -441,6 +575,7 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top4" class="projetosBx">
           <img
             class="hover-shadow cursor"
@@ -450,9 +585,8 @@
           <div>
             <div class="overlay">
               <h3 class="text">
-                Consulta de Carros<br /><span class="text-span"
-                  >ASP.NET Core Web AP | Blazor
-                </span>
+                Consulta de Carros<br />
+                <span class="text-span">ASP.NET Core Web API | Blazor</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -477,18 +611,18 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top5" class="projetosBx">
           <img
             class="hover-shadow cursor"
             src="image/gestao.png"
-            alt="Sistema de produtos"
+            alt="Sistema de Produtos"
           />
           <div>
             <div class="overlay">
               <h3 class="text">
-                Sistema de produtos<br /><span class="text-span"
-                  >React | C#</span
-                >
+                Sistema de Produtos<br />
+                <span class="text-span">React | C#</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -511,16 +645,18 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top6" class="projetosBx">
           <img
             class="hover-shadow cursor"
             src="image/templates.png"
-            alt="Templates"
+            alt="Templates de Sites"
           />
           <div>
             <div class="overlay">
               <h3 class="text">
-                Templates<br /><span class="text-span">JavaScript | HTML</span>
+                Templates de Sites<br />
+                <span class="text-span">JavaScript | HTML</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -545,18 +681,18 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top7" class="projetosBx">
           <img
             class="hover-shadow cursor"
             src="image/advogados.png"
-            alt="Sistema de advogados"
+            alt="Sistema de Controle OS - Advogados"
           />
           <div>
             <div class="overlay">
               <h3 class="text">
-                Sistema de advogados<br /><span class="text-span"
-                  >TypeScript | Tailwind</span
-                >
+                Controle de OS – Advogados<br />
+                <span class="text-span">TypeScript | Tailwind</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -581,16 +717,18 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top8" class="projetosBx">
           <img
             class="hover-shadow cursor"
-            src="image/projetorBarber.png"
+            src="image/projetorbarber.png"
             alt="BarberShop"
           />
           <div>
             <div class="overlay">
               <h3 class="text">
-                BarberShop<br /><span class="text-span">JavaScript | HTML</span>
+                BarberShop<br />
+                <span class="text-span">JavaScript | HTML</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -613,6 +751,7 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top9" class="projetosBx">
           <img
             class="hover-shadow cursor"
@@ -622,9 +761,8 @@
           <div>
             <div class="overlay">
               <h3 class="text">
-                AppPromo<br /><span class="text-span"
-                  >React Native | TypeScript</span
-                >
+                AppPromoções<br />
+                <span class="text-span">React Native | TypeScript</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -649,18 +787,18 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top10" class="projetosBx">
           <img
             class="hover-shadow cursor"
-            src="image/Registro.png"
+            src="image/registro.png"
             alt="Registros e Despesas"
           />
           <div>
             <div class="overlay">
               <h3 class="text">
-                Registros e Despesas<br /><span class="text-span"
-                  >JavaScript | HTML</span
-                >
+                Registros e Despesas<br />
+                <span class="text-span">JavaScript | HTML</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -685,18 +823,18 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top11" class="projetosBx">
           <img
             class="hover-shadow cursor"
-            src="image/LojaMoveis.png"
+            src="image/lojaMoveis.png"
             alt="Loja de Móveis"
           />
           <div>
             <div class="overlay">
               <h3 class="text">
-                Loja de Móveis<br /><span class="text-span"
-                  >ASP.NET Core MVC | Bootstrap</span
-                >
+                Loja de Móveis<br />
+                <span class="text-span">ASP.NET Core MVC | Bootstrap</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -721,20 +859,18 @@
             </div>
           </div>
         </div>
+
         <div data-anime="top12" class="projetosBx">
           <img
             class="hover-shadow cursor"
             src="image/api.png"
-            alt="Api de fundos de investimentos"
+            alt="API de Fundos de Investimentos"
           />
           <div>
             <div class="overlay">
               <h3 class="text">
-                Api de fundos de investimentos<br /><span
-                  class="text-span"
-                  id="em-breve"
-                  >Node Js | Prisma</span
-                >
+                API de Fundos de Investimentos<br />
+                <span class="text-span">Node.js | Prisma</span>
               </h3>
               <ul class="sci">
                 <li style="--i: 1">
@@ -765,8 +901,9 @@
           data-anime="top"
           href="https://github.com/Geeh17?tab=repositories"
           target="_blank"
-          >Repositórios no GitHub</a
         >
+          Repositórios no GitHub
+        </a>
       </div>
     </section>
 
@@ -777,75 +914,165 @@
         <div class="mySlides">
           <div class="numbertext">1 / 12</div>
           <figure>
-            <img src="image/cep.png" style="width: 100%" />
+            <img src="image/cep.png" style="width: 100%" alt="Consulta CEP" />
           </figure>
+          <p class="modal-desc">
+            Consulta de endereços via CEP utilizando API pública dos Correios.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">2 / 12</div>
           <figure>
-            <img src="image/tempo.png" style="width: 100%" />
+            <img
+              src="image/tempo.png"
+              style="width: 100%"
+              alt="Previsão do Tempo"
+            />
           </figure>
+          <p class="modal-desc">
+            App de clima em tempo real com busca por cidade, integrando API de
+            meteorologia.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">3 / 12</div>
           <figure>
-            <img src="image/anotacao.png" style="width: 100%" />
+            <img
+              src="image/anotacao.png"
+              style="width: 100%"
+              alt="Sistema de Anotações"
+            />
           </figure>
+          <p class="modal-desc">
+            Aplicação para criar, editar e organizar anotações pessoais, com
+            persistência local.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">4 / 12</div>
           <figure>
-            <img src="image/carro.png" style="width: 100%" />
+            <img
+              src="image/carro.png"
+              style="width: 100%"
+              alt="Consulta de Carros"
+            />
           </figure>
+          <p class="modal-desc">
+            Sistema de consulta e listagem de veículos com API REST em C# e
+            interface Blazor.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">5 / 12</div>
           <figure>
-            <img src="image/gestao.png" style="width: 100%" />
+            <img
+              src="image/gestao.png"
+              style="width: 100%"
+              alt="Sistema de Produtos"
+            />
           </figure>
+          <p class="modal-desc">
+            CRUD completo de produtos com back-end em C# e front-end em React.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">6 / 12</div>
           <figure>
-            <img src="image/templates.png" style="width: 100%" />
+            <img
+              src="image/templates.png"
+              style="width: 100%"
+              alt="Templates de Sites"
+            />
           </figure>
+          <p class="modal-desc">
+            Coleção de templates responsivos para diferentes segmentos de
+            negócio.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">7 / 12</div>
           <figure>
-            <img src="image/advogados.png" style="width: 100%" />
+            <img
+              src="image/advogados.png"
+              style="width: 100%"
+              alt="Controle OS - Advogados"
+            />
           </figure>
+          <p class="modal-desc">
+            Sistema de controle de ordens de serviço para escritórios de
+            advocacia.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">8 / 12</div>
           <figure>
-            <img src="image/projetorBarber.png" style="width: 100%" />
+            <img
+              src="image/projetorbarber.png"
+              style="width: 100%"
+              alt="BarberShop"
+            />
           </figure>
+          <p class="modal-desc">
+            Landing page para barbearia com design moderno e seção de serviços.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">9 / 12</div>
           <figure>
-            <img src="image/AppPromo.png" style="width: 100%" />
+            <img
+              src="image/AppPromo.png"
+              style="width: 100%"
+              alt="AppPromoções"
+            />
           </figure>
+          <p class="modal-desc">
+            Aplicativo mobile para listagem e busca de promoções, com navegação
+            por categorias.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">10 / 12</div>
           <figure>
-            <img src="image/Registro.png" style="width: 100%" />
+            <img
+              src="image/registro.png"
+              style="width: 100%"
+              alt="Registros e Despesas"
+            />
           </figure>
+          <p class="modal-desc">
+            Controle financeiro pessoal com registro de entradas e saídas e
+            saldo em tempo real.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">11 / 12</div>
           <figure>
-            <img src="image/LojaMoveis.png" style="width: 100%" />
+            <img
+              src="image/lojaMoveis.png"
+              style="width: 100%"
+              alt="Loja de Móveis"
+            />
           </figure>
+          <p class="modal-desc">
+            E-commerce de móveis com catálogo, carrinho e painel administrativo
+            em MVC.
+          </p>
         </div>
         <div class="mySlides">
           <div class="numbertext">12 / 12</div>
           <figure>
-            <img src="image/api.png" style="width: 100%" />
+            <img
+              src="image/api.png"
+              style="width: 100%"
+              alt="API de Fundos de Investimentos"
+            />
           </figure>
+          <p class="modal-desc">
+            API REST para controle e acompanhamento de fundos imobiliários com
+            autenticação JWT.
+          </p>
         </div>
+
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <div class="caption-container">
@@ -857,7 +1084,7 @@
             src="image/cep.png"
             style="width: 100%"
             onclick="currentSlide(1)"
-            alt="cep"
+            alt="Consulta CEP"
           />
         </div>
         <div class="column">
@@ -866,7 +1093,7 @@
             src="image/tempo.png"
             style="width: 100%"
             onclick="currentSlide(2)"
-            alt="Previsao do Tempo"
+            alt="Previsão do Tempo"
           />
         </div>
         <div class="column">
@@ -875,7 +1102,7 @@
             src="image/anotacao.png"
             style="width: 100%"
             onclick="currentSlide(3)"
-            alt="Anotacao"
+            alt="Sistema de Anotações"
           />
         </div>
         <div class="column">
@@ -884,7 +1111,7 @@
             src="image/carro.png"
             style="width: 100%"
             onclick="currentSlide(4)"
-            alt="ConsultaCarros"
+            alt="Consulta de Carros"
           />
         </div>
         <div class="column">
@@ -893,7 +1120,7 @@
             src="image/gestao.png"
             style="width: 100%"
             onclick="currentSlide(5)"
-            alt="Sistema de Prdutos"
+            alt="Sistema de Produtos"
           />
         </div>
         <div class="column">
@@ -902,7 +1129,7 @@
             src="image/templates.png"
             style="width: 100%"
             onclick="currentSlide(6)"
-            alt="Templates | Blog"
+            alt="Templates de Sites"
           />
         </div>
         <div class="column">
@@ -911,16 +1138,16 @@
             src="image/advogados.png"
             style="width: 100%"
             onclick="currentSlide(7)"
-            alt="Sistema de advogados"
+            alt="Controle OS - Advogados"
           />
         </div>
         <div class="column">
           <img
             class="demo cursor"
-            src="image/projetorBarber.png"
+            src="image/projetorbarber.png"
             style="width: 100%"
             onclick="currentSlide(8)"
-            alt="Barber Shop"
+            alt="BarberShop"
           />
         </div>
         <div class="column">
@@ -935,16 +1162,16 @@
         <div class="column">
           <img
             class="demo cursor"
-            src="image/Registro.png"
+            src="image/registro.png"
             style="width: 100%"
             onclick="currentSlide(10)"
-            alt="Registro e Despesas"
+            alt="Registros e Despesas"
           />
         </div>
         <div class="column">
           <img
             class="demo cursor"
-            src="image/LojaMoveis.png"
+            src="image/lojaMoveis.png"
             style="width: 100%"
             onclick="currentSlide(11)"
             alt="Loja de Móveis"
@@ -956,7 +1183,7 @@
             src="image/api.png"
             style="width: 100%"
             onclick="currentSlide(12)"
-            alt="Api de fundos de investimentos"
+            alt="API de Fundos de Investimentos"
           />
         </div>
       </div>
@@ -975,6 +1202,7 @@
                 href="https://wa.me/5532988075035"
                 class="fab fa-whatsapp fa-2x"
                 target="_blank"
+                aria-label="WhatsApp"
               ></a>
             </li>
             <li>
@@ -982,6 +1210,7 @@
                 href="https://www.instagram.com/gldasilva17/"
                 class="fab fa-instagram fa-2x"
                 target="_blank"
+                aria-label="Instagram"
               ></a>
             </li>
             <li>
@@ -989,6 +1218,7 @@
                 href="https://www.linkedin.com/in/geraldo-luiz-da-silva-7a1818a7/"
                 class="fab fa-linkedin fa-2x"
                 target="_blank"
+                aria-label="LinkedIn"
               ></a>
             </li>
             <li>
@@ -996,12 +1226,14 @@
                 href="https://github.com/Geeh17"
                 target="_blank"
                 class="fab fa-github fa-2x"
+                aria-label="GitHub"
               ></a>
             </li>
             <li>
               <a
                 href="mailto:geraldoluis1913@hotmail.com"
                 class="far fa-envelope fa-2x"
+                aria-label="E-mail"
               ></a>
             </li>
           </ul>
@@ -1012,14 +1244,22 @@
         </div>
       </div>
     </section>
-    <a onclick="topFunction()" id="back-to-top" title="Go to top"
-      ><i class="fas fa-chevron-up"></i
-    ></a>
+
+    <a
+      onclick="topFunction()"
+      id="back-to-top"
+      title="Voltar ao topo"
+      aria-label="Voltar ao topo"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
     <footer>
       <p>
         © <span id="hora"></span> Geraldo Luiz. Todos os direitos reservados.
       </p>
     </footer>
+
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
   </body>

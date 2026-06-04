@@ -1,117 +1,132 @@
-// Mudança de cor ao rolar
+// ─── Header: muda aparência ao rolar ───────────────────────────────────────
 window.addEventListener("scroll", function () {
-  const header = document.querySelector("header");
-  header.classList.toggle("stick", window.scrollY > 0);
+  document.querySelector("header").classList.toggle("stick", window.scrollY > 0);
   scrollFunction();
   animeScroll();
 });
+
+// ─── Menu mobile ───────────────────────────────────────────────────────────
 function toggleMenu() {
-  const menuToggle = document.querySelector(".toggle");
-  const menu = document.querySelector(".menu");
-  menuToggle.classList.toggle("active");
-  menu.classList.toggle("active");
+  document.querySelector(".toggle").classList.toggle("active");
+  document.querySelector(".menu").classList.toggle("active");
 }
 
-let count = 0;
-const texto = "Bem-vindo ao meu portfólio!";
-
-function digitar() {
-  const result = document.getElementById("result");
-  window.setTimeout(() => inserir(texto[count]), 50);
-}
-
-function inserir(letra) {
-  const result = document.getElementById("result");
-  result.innerHTML += letra;
-  count++;
-  if (count < texto.length) {
-    window.setTimeout(() => inserir(texto[count]), 50);
+// Fecha menu ao pressionar Escape
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    document.querySelector(".toggle").classList.remove("active");
+    document.querySelector(".menu").classList.remove("active");
   }
-}
+});
 
-window.onload = digitar;
+// ─── Efeito de digitação: "Bem-vindo ao meu portfólio!" ───────────────────
+(function () {
+  const texto = "Bem-vindo ao meu portfólio!";
+  const el = document.getElementById("result");
+  let i = 0;
 
-const div = document.getElementById("log");
-const textos = [
-  "Analista de Desenvolvimento de Sistemas",
-  "Analista de sistema C# | SQL Server",
-  "Freelancer FullStack",
-];
-
-function escrever(str, done) {
-  const char = str.split("").reverse();
-  const typer = setInterval(() => {
-    if (!char.length) {
-      clearInterval(typer);
-      return setTimeout(done, 500);
+  function inserir() {
+    if (i < texto.length) {
+      el.textContent += texto[i++];
+      setTimeout(inserir, 50);
     }
-    const next = char.pop();
-    div.innerHTML += next;
-  }, 100);
-}
+  }
 
-function limpar(done) {
-  const char = div.innerHTML;
-  let nr = char.length;
-  const typer = setInterval(() => {
-    if (nr-- == 0) {
-      clearInterval(typer);
-      return done();
-    }
-    div.innerHTML = char.slice(0, nr);
-  }, 100);
-}
+  window.addEventListener("load", inserir);
+})();
 
-function rodape(conteudos) {
-  let atual = -1;
-  function prox(cb) {
-    if (atual < conteudos.length - 1) atual++;
-    else atual = 0;
-    const str = conteudos[atual];
-    escrever(str, function () {
-      limpar(prox);
+// ─── Rotação de títulos no banner ─────────────────────────────────────────
+(function () {
+  const div = document.getElementById("log");
+  const textos = [
+    "Analista de Desenvolvimento de Sistemas",
+    "Desenvolvedor Back-End C# | .NET | SQL Server",
+    "Freelancer Full Stack",
+  ];
+  let atual = 0;
+
+  function escrever(str, done) {
+    const chars = str.split("");
+    let i = 0;
+    const timer = setInterval(() => {
+      if (i >= chars.length) {
+        clearInterval(timer);
+        return setTimeout(done, 1500);
+      }
+      div.textContent += chars[i++];
+    }, 80);
+  }
+
+  function limpar(done) {
+    const timer = setInterval(() => {
+      if (!div.textContent.length) {
+        clearInterval(timer);
+        return setTimeout(done, 300);
+      }
+      div.textContent = div.textContent.slice(0, -1);
+    }, 40);
+  }
+
+  function proximo() {
+    escrever(textos[atual], () => {
+      limpar(() => {
+        atual = (atual + 1) % textos.length;
+        proximo();
+      });
     });
   }
-  prox(prox);
-}
-rodape(textos);
 
+  proximo();
+})();
+
+// ─── Animações ao rolar ───────────────────────────────────────────────────
 const targets = document.querySelectorAll("[data-anime]");
-const animationClass = "animate";
 
 function animeScroll() {
-  const windowTop = window.pageYOffset + window.innerHeight * 0.75;
-  targets.forEach(function (element) {
-    if (windowTop > element.offsetTop) {
-      element.classList.add(animationClass);
-    } else {
-      element.classList.remove(animationClass);
-    }
+  const threshold = window.pageYOffset + window.innerHeight * 0.75;
+  targets.forEach(function (el) {
+    el.classList.toggle("animate", threshold > el.offsetTop);
   });
 }
 
+animeScroll(); // roda na carga para elementos já visíveis
+
+// ─── Botão voltar ao topo ─────────────────────────────────────────────────
 const backToTop = document.getElementById("back-to-top");
 
 function scrollFunction() {
-  backToTop.style.display =
-    document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
-      ? "block"
-      : "none";
+  const scrolled = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20;
+  backToTop.style.display = scrolled ? "block" : "none";
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+// ─── Modal de imagens ─────────────────────────────────────────────────────
+const modal = document.getElementById("myModal");
+
 function openModal() {
-  document.getElementById("myModal").style.display = "block";
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden"; // impede scroll da página por baixo
 }
 
 function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+  modal.style.display = "none";
+  document.body.style.overflow = "";
 }
 
+// Fecha modal ao clicar fora do conteúdo
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) closeModal();
+});
+
+// Fecha modal com Escape
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") closeModal();
+});
+
+// ─── Slideshow do modal ───────────────────────────────────────────────────
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -125,26 +140,42 @@ function currentSlide(n) {
 
 function showSlides(n) {
   const slides = document.getElementsByClassName("mySlides");
-  const dots = document.getElementsByClassName("demo");
+  const dots   = document.getElementsByClassName("demo");
   const captionText = document.getElementById("caption");
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1)             slideIndex = slides.length;
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  Array.from(slides).forEach(s => (s.style.display = "none"));
+  Array.from(dots).forEach(d => d.classList.remove("active"));
 
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
+  dots[slideIndex - 1].classList.add("active");
+  captionText.textContent = dots[slideIndex - 1].alt;
 }
 
-document.getElementById("hora").innerHTML = new Date().getFullYear();
+// Navegação pelo teclado dentro do modal
+document.addEventListener("keydown", function (e) {
+  if (modal.style.display !== "block") return;
+  if (e.key === "ArrowRight") plusSlides(1);
+  if (e.key === "ArrowLeft")  plusSlides(-1);
+});
+
+// ─── Ano no rodapé ────────────────────────────────────────────────────────
+document.getElementById("hora").textContent = new Date().getFullYear();
+
+// ─── Dark Mode ────────────────────────────────────────────────────────────
+const darkToggle = document.getElementById("dark-toggle");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+// Aplica preferência salva ou do sistema
+if (localStorage.getItem("dark") === "true" || (!localStorage.getItem("dark") && prefersDark)) {
+  document.body.classList.add("dark");
+  darkToggle.textContent = "☀️";
+}
+
+darkToggle.addEventListener("click", () => {
+  const isDark = document.body.classList.toggle("dark");
+  darkToggle.textContent = isDark ? "☀️" : "🌙";
+  localStorage.setItem("dark", isDark);
+});
